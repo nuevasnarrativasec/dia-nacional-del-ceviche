@@ -1,0 +1,571 @@
+.logo-peru21 {
+    background: url(../img/logo-p21.png) no-repeat 0 0;
+    background-size: 100%;
+    display: block;
+    height: 24px;
+    width: 75px;
+    float: left;
+    margin-top: 5px;
+}
+h2 {
+    font: 600 24px/17px 'PreloSlab-Medium';
+    font-size: 0.9rem;
+    color: black;
+    /* max-width: 190px; */
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+h3 {
+    font: 600 24px/17px 'PreloSlab-Medium';
+    font-size: 0.9rem;
+    color: #ca892a;
+    /* max-width: 190px; */
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+h2 span{    
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.btn:hover {
+    color: #fff;
+}
+
+.miescala {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.miescala:hover {
+    transform: scale(1.13);
+}
+
+/** fonts **/
+@font-face {
+    font-family: 'Prelo-Medium';
+    src: url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Prelo-Bold';
+    src: url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/Prelo-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'PreloSlab-Medium';
+    src: url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+
+@font-face {
+    font-family: 'roboto-condensed';
+    src: url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/RobotoCondensed-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/RobotoCondensed-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/RobotoCondensed-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-boldcondensed';
+    src: url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-BoldCondensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-BoldCondensed.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-BoldCondensed.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-BoldCondensed.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://multimedia.mag.elcomercio.pe/elementos-comunes/fonts/Roboto-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'PreloSlab-Bold';
+    src: url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'PreloSlab-Medium';
+    src: url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://especiales.peru21.pe/elementos-comunes/fonts/PreloSlab-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('https://especiales.peru21.pe/elementos-comunes/fonts/icomoon.eot?');
+    src:  url('https://especiales.peru21.pe/elementos-comunes/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+      url('https://especiales.peru21.pe/elementos-comunes/fonts/icomoon.ttf?') format('truetype'),
+      url('https://especiales.peru21.pe/elementos-comunes/fonts/icomoon.woff?') format('woff'),
+      url('https://especiales.peru21.pe/elementos-comunes/fonts/icomoon.svg?#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+a.logo-mag {
+    background: url('https://especiales.peru21.pe/elementos-comunes/img/logo-mag.png') no-repeat 0 0;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: auto;
+    background-size: 95%;
+    height: 30px;
+    width: 65px;
+    background-position: 0px 0px;
+}
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+/* header comercio */
+header {
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    background: #0c70bf;
+    top: 0;
+    z-index: 99;
+    display: table;
+}
+.header-comercio {
+    background: #0c70bf;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.ctn-header-comercio {
+    margin: 0 auto;
+    max-width: 990px;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    padding: 6px 10px;
+}
+.ctn-header-comercio a {
+    display: inline-block;
+    color: #FFF;
+}
+.ctn-header-comercio .logo-comercio i {
+    font-size: 18px;
+}
+.header-barra-2 {
+    height: 20px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -20px;
+    width: 1px;
+}
+.boton-especiales {
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+    text-indent: 0 !important;
+    margin: 0 0 0 9px;
+    color: #fff;
+    font: 700 13px/13px Arial;
+    padding-top: 10px;
+}
+.cruz {
+    display: inline-block;
+    width: 12px;
+    position: relative;
+    height: 12px;
+    top: 1px;
+}
+.cruz:before,
+.cruz:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+}
+.cruz:before {
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    height: 100%;
+}
+.cruz:after {
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+    width: 100%;
+}
+#social {
+    float: right;
+    margin-right: 0
+}
+#social ul {
+    display: inline-block;
+    margin: 8px auto 0;
+    padding: 0;
+    vertical-align: top
+}
+#social ul li {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: top
+}
+#social ul li a {
+    height: 32px;
+    width: 32px
+}
+#social ul li:hover {
+    opacity: 0.5
+}
+a.wst {
+    display: none;
+}
+/* fin de header comercio */
+
+.container-zocalo{
+    max-width: 728px;
+    height: auto;
+    z-index: 2147483646;
+    position: fixed;
+    margin: 20px auto 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/*Banners de publicidad*/
+.container-top{
+    margin: 42px 0 0 0;
+    height: auto;
+    text-align: center;
+}
+.container-caja3{
+    display: none;
+}
+.lateral-izq{
+    display: inline-block;
+    padding: 20px 0;
+    width: 12%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 620px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 30px;
+    left: 0;
+}
+.lateral-der{
+    display: inline-block;
+    padding: 20px 0;
+    width: 12%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 620px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 30px;
+    right: 0;
+}
+/*Fin banners de publicidad*/
+.clear{
+    clear: both;
+}
+.container, .container-receta{    
+    max-width: 980px;
+}
+.container{    
+    margin-bottom: 100px;
+}
+.container-receta{
+    padding-bottom: 10px;
+}
+.titulo{
+    font: 500 22px/26px 'Prelo-Medium';
+    font-style: italic;
+}
+    .titulo span{
+    font: 700 22px/26px 'Prelo-Bold';
+    font-style: italic;
+    }
+.contenedor-recetas{
+    max-width: 450px;
+}
+.contenedor-receta{
+    max-width: 768px;
+}
+.box-gris{
+    background-color: #F0F0F0;
+    border-radius: 30px 30px 20px 20px;
+}
+.btn-receta{
+    font: 500 15px/22px 'roboto-medium';
+    width: 100%;
+    font-style: italic;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.color-negro{
+    background-color: #000;
+    color: #eebb2c;
+}
+.color-amarillo{
+    background-color: #eebb2c;
+    color: #000;
+}
+
+.rojo{
+    background-color: #CC0A1B;
+    /*background-color: #F4BE41;*/
+}
+.verde{
+    background-color: #58862E;
+}
+.dorado{
+    background-color: #B98835;
+}
+.titulo-rojo{
+    /*color: #CC0A1B;*/
+    color: #000;
+}
+.titulo-verde{
+    color: #58862E;
+}
+.titulo-dorado{
+    color: #B98835;
+}
+.titulo-receta{
+    font: 500 50px/50px 'PreloSlab-Bold';
+    border-left: 2px solid #F4BE41;
+}
+.subtitulo-receta{
+    font: 500 18px/22px 'roboto-bold';
+}
+.ingredientes{
+    font: 700 17px/33px 'PreloSlab-Medium';
+}
+ul {
+    list-style: none;
+}
+/*li::before { 
+    content: "\2D"; 
+    padding-right: 8px; 
+}*/
+.list-group-item{
+    border: none;
+    border-top: 1px solid #000;
+    font: 500 16px/26px 'PreloSlab-Medium';
+}
+.texto-receta{
+    font: 500 16px/20px 'PreloSlab-Medium';
+}
+.btn-inicio{
+    font: 700 18px/17px 'roboto-boldcondensed';
+    background-color: #F4BE41;
+    color: black !important;
+    padding: 0.5rem 2rem;
+    font-style: italic;
+    border-radius: 20px;
+}
+
+
+.dq-gris{
+    background-color: #2a2a2a;
+    background: url('../img/bg.jpg') repeat-x;
+}
+.dq-title{
+    color: #fff;
+}
+.dq-title span{
+    color: #F4BE41;
+}
+@media screen and (max-width: 1024px) {
+    .lateral-izq,
+    .lateral-der {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    /*Banners de publicidad*/
+    .container-top {
+        overflow: scroll;
+        width: 100%;
+        height: auto;
+    }
+    .container-caja3 {
+        display: block;
+        margin: 10px auto;
+        padding-bottom: 140px;
+        text-align: center;
+    }
+    .header {
+        margin: 5px auto;
+        padding-bottom: 50px;
+    }
+    .container-zocalo {
+        bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    a.wst {
+        display: inline-block;
+    }
+
+    #social ul li {
+        margin-right: 5px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/*Banners de publicidad*/
+.container-top {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+.lateral-izq{
+    text-align: right;
+    float: left;
+    display: inline-block;
+    margin: 5px 0;
+    max-width: 180px;
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: auto;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+}
+.lateral-der{
+    text-align: left;
+    float: right;
+    display: inline-block;
+    margin: 5px 0;
+    max-width: 180px;
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: auto;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 20px;
+    right: 0px;
+}
+.container-zocalo{
+    max-width: 728px;
+    max-height: 90px;
+    height: 100%;
+    z-index: 2147;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .lateral-izq,.lateral-der{
+        display: none;
+    }
+    .container-zocalo{
+        height: 60px;
+        overflow: scroll;
+    }
+} 
